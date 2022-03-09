@@ -8,9 +8,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                withMaven(maven:"M3.6"){
+              
                     bat "mvn test"
-                }
+                
             }
         }
         stage('Deploy') {
